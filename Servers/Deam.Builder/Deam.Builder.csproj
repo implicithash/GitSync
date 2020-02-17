@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4E4C4BB8-EA80-4B18-A620-36C5B6FA6809}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Deam.Builder</RootNamespace>
+    <AssemblyName>Deam.Builder</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\Servers\Deam\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>..\..\bin\Release\Servers\Deam\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CallService.Distribution.Contract">
+      <HintPath>..\..\Lib\Nav\Deam\CallService.Distribution.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\..\Lib\Nav\Deam\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DEAM.Launcher">
+      <HintPath>..\..\Lib\Nav\Deam\DEAM.Launcher.exe</HintPath>
+    </Reference>
+    <Reference Include="EastWind">
+      <HintPath>..\..\Lib\Nav\Deam\EastWind.dll</HintPath>
+    </Reference>
+    <Reference Include="EastWind.Network">
+      <HintPath>..\..\Lib\Nav\Deam\EastWind.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="EastWind.PerformanceCounters">
+      <HintPath>..\..\Lib\Nav\Deam\EastWind.PerformanceCounters.dll</HintPath>
+    </Reference>
+    <Reference Include="EastWind.Settings">
+      <HintPath>..\..\Lib\Nav\Deam\EastWind.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\Lib\Nav\Deam\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework6.Npgsql">
+      <HintPath>..\..\Lib\Nav\Deam\EntityFramework6.Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Activities.Interface">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.Activities.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.CallServices.Ivr.Contract">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.CallServices.Ivr.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.CallServices.WCF.Contract">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.CallServices.WCF.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.CodeResult.Contract">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.CodeResult.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Contracts">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Entities">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Entities.Utility">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.Entities.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.ExceptionUtilities">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.ExceptionUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.License.Common">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.License.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Localization.Interface">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.Localization.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.PerformanceUtilites">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.PerformanceUtilites.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Repositories">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.Repositories.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Security.Contracts">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.Security.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Servers.Application.Contracts">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.Servers.Application.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Servers.Application.Interface">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.Servers.Application.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Servers.Common">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.Servers.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Servers.Cpr.Interfaces">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.Servers.Cpr.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Servers.DEAM.Application">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.Servers.DEAM.Application.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Servers.DEAM.Contracts">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.Servers.DEAM.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Servers.DEAM.Interfaces">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.Servers.DEAM.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Servers.DEAM.Security">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.Servers.DEAM.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Servers.DEAM.Security.Common, Version=2.2.2.3, Culture=neutral, PublicKeyToken=f7f86b9b38b20f8a, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.Servers.DEAM.Security.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Servers.DEAM.Security.MsSql">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.Servers.DEAM.Security.MsSql.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Servers.DEAM.Security.PgSql">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.Servers.DEAM.Security.PgSql.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Servers.DEAM.Services">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.Servers.DEAM.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Servers.Statistic.Contracts">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.Servers.Statistic.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Service.Common">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.Service.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.UssdWorkflowServices.Interfaces">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.UssdWorkflowServices.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Utilities">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.WCFClientBase">
+      <HintPath>..\..\Lib\Nav\Deam\EW.Navigator.WCFClientBase.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.RateUtility">
+      <HintPath>..\..\Lib\Nav\Deam\EW.RateUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Licenses, Version=2.2.2.3, Culture=neutral, PublicKeyToken=f7f86b9b38b20f8a, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nav\Deam\Licenses.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqKit">
+      <HintPath>..\..\Lib\Nav\Deam\LinqKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nav\Deam\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF">
+      <HintPath>..\..\Lib\Nav\Deam\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nav\Deam\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation">
+      <HintPath>..\..\Lib\Nav\Deam\Microsoft.Practices.EnterpriseLibrary.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\..\Lib\Nav\Deam\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nav\Deam\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\..\Lib\Nav\Deam\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception">
+      <HintPath>..\..\Lib\Nav\Deam\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration">
+      <HintPath>..\..\Lib\Nav\Deam\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention">
+      <HintPath>..\..\Lib\Nav\Deam\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="NetSqlAzMan">
+      <HintPath>..\..\Lib\Nav\Deam\NetSqlAzMan.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.AsyncEx.Coordination">
+      <HintPath>..\..\Lib\Nav\Deam\Nito.AsyncEx.Coordination.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.AsyncEx.Tasks">
+      <HintPath>..\..\Lib\Nav\Deam\Nito.AsyncEx.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.Collections.Deque">
+      <HintPath>..\..\Lib\Nav\Deam\Nito.Collections.Deque.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.Disposables">
+      <HintPath>..\..\Lib\Nav\Deam\Nito.Disposables.dll</HintPath>
+    </Reference>
+    <Reference Include="PerformanceCounterHelper">
+      <HintPath>..\..\Lib\Nav\Deam\PerformanceCounterHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="PerformanceCounterHelper.Installer">
+      <HintPath>..\..\Lib\Nav\Deam\PerformanceCounterHelper.Installer.exe</HintPath>
+    </Reference>
+    <Reference Include="pgProvider">
+      <HintPath>..\..\Lib\Nav\Deam\pgProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="RulesProvider.Interfaces">
+      <HintPath>..\..\Lib\Nav\Deam\RulesProvider.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Schema.mssql, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nav\Deam\Schema.mssql.dll</HintPath>
+    </Reference>
+    <Reference Include="Schema.pgsql, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nav\Deam\Schema.pgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Collections.Immutable, Version=1.1.37.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nav\Deam\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Reactive.Core">
+      <HintPath>..\..\Lib\Nav\Deam\System.Reactive.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces">
+      <HintPath>..\..\Lib\Nav\Deam\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq">
+      <HintPath>..\..\Lib\Nav\Deam\System.Reactive.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.PlatformServices">
+      <HintPath>..\..\Lib\Nav\Deam\System.Reactive.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\behaviors.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\bindings.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\client.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\diagnostics.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\logging.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\services.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="app.config" />
+    <None Include="DEAM.Launcher.exe.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="license.lic">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\..\packages\Microsoft.DependencyValidation.Analyzers.0.9.0\analyzers\dotnet\cs\Microsoft.DependencyValidation.Analyzers.resources.dll" />
+    <Analyzer Include="..\..\packages\Microsoft.DependencyValidation.Analyzers.0.9.0\analyzers\dotnet\Microsoft.DependencyValidation.Analyzers.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!--Import Project="$(SolutionDir)\.nuget\nuget.targets" /-->
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

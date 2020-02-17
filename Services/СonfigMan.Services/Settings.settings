@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="EW.Navigator.SCM.Services" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="LocalPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">repos</Value>
+    </Setting>
+    <Setting Name="RemotePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ssh://git@192.168.14.73:22/home/git/repos/ansible.git</Value>
+    </Setting>
+    <Setting Name="UserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">git</Value>
+    </Setting>
+    <Setting Name="PublicKeyPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">keys\id_rsa.pub</Value>
+    </Setting>
+    <Setting Name="PrivateKeyPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">keys\id_rsa</Value>
+    </Setting>
+    <Setting Name="Passphrase" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CommonSettings" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CommonSettings</Value>
+    </Setting>
+    <Setting Name="MinutesDelay" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

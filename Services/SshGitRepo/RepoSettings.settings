@@ -1,0 +1,54 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="EW.Navigator.SCM.GitRepo.Sync" GeneratedClassName="RepoSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="GroupVars" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">group_vars</Value>
+    </Setting>
+    <Setting Name="HostVars" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">host_vars</Value>
+    </Setting>
+    <Setting Name="Hosts" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">hosts</Value>
+    </Setting>
+    <Setting Name="AnsibleHostVariable" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ansible_host</Value>
+    </Setting>
+    <Setting Name="IniExtension" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">.ini</Value>
+    </Setting>
+    <Setting Name="DefaultUserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">root</Value>
+    </Setting>
+    <Setting Name="DefaultEmail" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">root@localhost.localdomain</Value>
+    </Setting>
+    <Setting Name="DefaultCommit" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Updating the app configuration (details: {0})</Value>
+    </Setting>
+    <Setting Name="ServerApplicationName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ServerApplicationName</Value>
+    </Setting>
+    <Setting Name="ServerTcpPort" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ServerTcpPort</Value>
+    </Setting>
+    <Setting Name="ServerIp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ServerIp</Value>
+    </Setting>
+    <Setting Name="ServerType" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ServerType</Value>
+    </Setting>
+    <Setting Name="CommonSettings" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CommonSettings</Value>
+    </Setting>
+    <Setting Name="MachineName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">MachineName</Value>
+    </Setting>
+    <Setting Name="RegisteredAppsDb" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">db_registered_apps\registered_apps.json</Value>
+    </Setting>
+    <Setting Name="LocalHostVarPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">localhost.yml</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

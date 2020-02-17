@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{86A252D8-903C-41BE-B4D9-B231E1E2CFD7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EW.EProcessing.SCM.Deam</RootNamespace>
+    <AssemblyName>EW.EProcessing.SCM.Deam</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\Servers\Deam\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\Release\Servers\Deam\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EastWind, Version=1.6.0.0, Culture=neutral, PublicKeyToken=29ab1bfcaf1108e4, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Eastwind.Package.1.6.1\lib\net461\EastWind.dll</HintPath>
+    </Reference>
+    <Reference Include="EastWind.Settings, Version=1.5.0.0, Culture=neutral, PublicKeyToken=29ab1bfcaf1108e4, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EastWind.Settings.Package.1.5.1\lib\net461\EastWind.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.CallServices.WCF.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f7f86b9b38b20f8a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EW.Navigator.Servers.DEAM.Contracts.Package.3.0.6\lib\net461\EW.Navigator.CallServices.WCF.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f7f86b9b38b20f8a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EW.Navigator.WcfService.Common.Package.3.0.6\lib\net461\EW.Navigator.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f7f86b9b38b20f8a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EW.Navigator.WcfService.Common.Package.3.0.6\lib\net461\EW.Navigator.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.ExceptionUtilities, Version=3.0.0.3, Culture=neutral, PublicKeyToken=f7f86b9b38b20f8a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EW.Navigator.Servers.Common.Package.3.0.6\lib\net461\EW.Navigator.ExceptionUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.License.Common, Version=3.0.0.3, Culture=neutral, PublicKeyToken=f7f86b9b38b20f8a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EW.Navigator.WcfService.Common.Package.3.0.6\lib\net461\EW.Navigator.License.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Security.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f7f86b9b38b20f8a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EW.Navigator.DEAM.Module.Package.3.0.6\lib\net461\EW.Navigator.Security.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Servers.Application.Contracts, Version=3.0.0.3, Culture=neutral, PublicKeyToken=f7f86b9b38b20f8a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EW.Navigator.WcfService.Common.Package.3.0.6\lib\net461\EW.Navigator.Servers.Application.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Servers.Application.Interface, Version=3.0.0.3, Culture=neutral, PublicKeyToken=f7f86b9b38b20f8a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EW.Navigator.WcfService.Common.Package.3.0.6\lib\net461\EW.Navigator.Servers.Application.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Servers.Common, Version=3.0.0.3, Culture=neutral, PublicKeyToken=f7f86b9b38b20f8a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EW.Navigator.Servers.Common.Package.3.0.6\lib\net461\EW.Navigator.Servers.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Servers.DEAM.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f7f86b9b38b20f8a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EW.Navigator.Servers.DEAM.Contracts.Package.3.0.6\lib\net461\EW.Navigator.Servers.DEAM.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Servers.DEAM.Interfaces, Version=3.0.0.3, Culture=neutral, PublicKeyToken=f7f86b9b38b20f8a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EW.Navigator.DEAM.Module.Package.3.0.6\lib\net461\EW.Navigator.Servers.DEAM.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Servers.DEAM.Services.Common, Version=3.0.0.3, Culture=neutral, PublicKeyToken=f7f86b9b38b20f8a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EW.Navigator.DEAM.Module.Package.3.0.6\lib\net461\EW.Navigator.Servers.DEAM.Services.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Service.Common, Version=3.0.0.3, Culture=neutral, PublicKeyToken=f7f86b9b38b20f8a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EW.Navigator.Servers.Common.Package.3.0.6\lib\net461\EW.Navigator.Service.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.Utilities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f7f86b9b38b20f8a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EW.Navigator.Servers.Common.Package.3.0.6\lib\net461\EW.Navigator.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="EW.Navigator.WcfService.Common, Version=3.0.0.3, Culture=neutral, PublicKeyToken=f7f86b9b38b20f8a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EW.Navigator.WcfService.Common.Package.3.0.6\lib\net461\EW.Navigator.WcfService.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Licenses, Version=3.0.0.3, Culture=neutral, PublicKeyToken=f7f86b9b38b20f8a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EW.Navigator.Servers.Common.Package.3.0.6\lib\net461\Licenses.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EnterpriseLibrary.ExceptionHandling.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EnterpriseLibrary.ExceptionHandling.WCF.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EnterpriseLibrary.Validation.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.Interception.3.5.1404.0\lib\Net45\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.Interception.3.5.1404.0\lib\Net45\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="PerformanceCounterHelper, Version=1.3.0.2, Culture=neutral, PublicKeyToken=a562e283302dc9b8, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EW.Navigator.Servers.Common.Package.3.0.6\lib\net461\PerformanceCounterHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Module.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\ConfigMan.Contracts\Contracts.csproj">
+      <Project>{6096e8b8-b051-43a5-9e3e-d465bc2a057e}</Project>
+      <Name>Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\СonfigMan.Services.Interfaces\Services.Interfaces.csproj">
+      <Project>{ba7879a9-4dec-4274-bf78-259e40092382}</Project>
+      <Name>Services.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\СonfigMan.Services\Services.csproj">
+      <Project>{4a3dfea2-e097-47dd-812b-12c3462fa20a}</Project>
+      <Name>Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\..\packages\Microsoft.DependencyValidation.Analyzers.0.9.0\analyzers\dotnet\cs\Microsoft.DependencyValidation.Analyzers.resources.dll" />
+    <Analyzer Include="..\..\packages\Microsoft.DependencyValidation.Analyzers.0.9.0\analyzers\dotnet\Microsoft.DependencyValidation.Analyzers.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

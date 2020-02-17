@@ -1,0 +1,9 @@
+<Project>
+ <PropertyGroup>
+   <NugetProductVersion>3.0.5</NugetProductVersion>
+    <NugetShellProductVersion>3.0.5</NugetShellProductVersion>
+    <ClientPackageBin>$(SolutionDir)\bin\$(Configuration)\Clients\Packages</ClientPackageBin>
+    <PackageBin>$(SolutionDir)\bin\$(Configuration)\Packages</PackageBin>
+   <RestorePackages>true</RestorePackages>
+ </PropertyGroup>
+ </Project>

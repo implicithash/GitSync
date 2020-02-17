@@ -1,0 +1,10 @@
+<Project>
+ <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Import  Project="$(SolutionDir)StrongNamer\build\StrongNamer.targets" Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU' AND Exists('$(SolutionDir)StrongNamer\build\StrongNamer.targets') AND $(MSBuildProjectExtension)=='.csproj'" />
+  <Target  Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'" Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)StrongNamer\build\StrongNamer.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)StrongNamer\build\StrongNamer.targets'))" />
+  </Target>
+</Project>

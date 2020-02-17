@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>129316e2-c826-45f3-8e4d-18b901a31b75</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NuProjPath Condition=" '$(NuProjPath)' == '' ">$(MSBuildExtensionsPath)\NuProj\</NuProjPath>
+  </PropertyGroup>
+  <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
+  <PropertyGroup Label="Configuration">
+    <Id>EW.ConfigMan.Services.Package</Id>
+    <Version>1.0.0</Version>
+    <Title>EW.ConfigMan.Services.Package</Title>
+    <Authors>v.aleksandrova</Authors>
+    <Owners>v.aleksandrova</Owners>
+    <Summary>EW.ConfigMan.Services.Package</Summary>
+    <Description>EW.ConfigMan.Services.Package</Description>
+    <ReleaseNotes>
+    </ReleaseNotes>
+    <ProjectUrl>
+    </ProjectUrl>
+    <LicenseUrl>
+    </LicenseUrl>
+    <Copyright>Copyright © v.aleksandrova</Copyright>
+    <Tags>EW.ConfigMan.Services.Package</Tags>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Services\RestfulGit.Interfaces\RestfulGit.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Services\RestfulGit\RestfulGit.csproj" />
+    <ProjectReference Include="..\..\Services\SshClient.Interfaces\SshClient.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Services\SshClient\SshClient.csproj" />
+    <ProjectReference Include="..\..\Services\SshGitRepo.Interfaces\SshGitRepo.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Services\SshGitRepo\SshGitRepo.csproj" />
+    <ProjectReference Include="..\..\Services\СonfigMan.Services.Interfaces\Services.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Services\СonfigMan.Services\Services.csproj" />
+  </ItemGroup>
+  <Import Project="$(NuProjPath)\NuProj.targets" />
+</Project>
